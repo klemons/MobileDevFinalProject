@@ -15,6 +15,11 @@
 		7ECE3FCB2277342B00B87E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE3FC92277342B00B87E22 /* LaunchScreen.storyboard */; };
 		7ECE3FD62277342B00B87E22 /* MobileDevFinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE3FD52277342B00B87E22 /* MobileDevFinalProjectTests.swift */; };
 		7ECE3FE12277342B00B87E22 /* MobileDevFinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE3FE02277342B00B87E22 /* MobileDevFinalProjectUITests.swift */; };
+		7ECE3FF1227734A800B87E22 /* pitching.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE3FF0227734A800B87E22 /* pitching.json */; };
+		7ECE3FF3227734B000B87E22 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE3FF2227734B000B87E22 /* people.json */; };
+		7ECE3FF5227734B600B87E22 /* teamsFranchises.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE3FF4227734B600B87E22 /* teamsFranchises.json */; };
+		7ECE3FF7227734BE00B87E22 /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE3FF6227734BE00B87E22 /* teams.json */; };
+		7ECE3FF9227734C400B87E22 /* batting.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE3FF8227734C400B87E22 /* batting.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		7ECE3FDC2277342B00B87E22 /* MobileDevFinalProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileDevFinalProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECE3FE02277342B00B87E22 /* MobileDevFinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDevFinalProjectUITests.swift; sourceTree = "<group>"; };
 		7ECE3FE22277342B00B87E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECE3FF0227734A800B87E22 /* pitching.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pitching.json; sourceTree = "<group>"; };
+		7ECE3FF2227734B000B87E22 /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
+		7ECE3FF4227734B600B87E22 /* teamsFranchises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teamsFranchises.json; sourceTree = "<group>"; };
+		7ECE3FF6227734BE00B87E22 /* teams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
+		7ECE3FF8227734C400B87E22 /* batting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = batting.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 		7ECE3FB22277342A00B87E22 = {
 			isa = PBXGroup;
 			children = (
+				7ECE3FEF2277345400B87E22 /* Jsons */,
 				7ECE3FBD2277342A00B87E22 /* MobileDevFinalProject */,
 				7ECE3FD42277342B00B87E22 /* MobileDevFinalProjectTests */,
 				7ECE3FDF2277342B00B87E22 /* MobileDevFinalProjectUITests */,
@@ -126,6 +137,18 @@
 				7ECE3FE22277342B00B87E22 /* Info.plist */,
 			);
 			path = MobileDevFinalProjectUITests;
+			sourceTree = "<group>";
+		};
+		7ECE3FEF2277345400B87E22 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				7ECE3FF8227734C400B87E22 /* batting.json */,
+				7ECE3FF6227734BE00B87E22 /* teams.json */,
+				7ECE3FF4227734B600B87E22 /* teamsFranchises.json */,
+				7ECE3FF2227734B000B87E22 /* people.json */,
+				7ECE3FF0227734A800B87E22 /* pitching.json */,
+			);
+			path = Jsons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +256,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ECE3FCB2277342B00B87E22 /* LaunchScreen.storyboard in Resources */,
+				7ECE3FF3227734B000B87E22 /* people.json in Resources */,
+				7ECE3FF5227734B600B87E22 /* teamsFranchises.json in Resources */,
 				7ECE3FC82277342B00B87E22 /* Assets.xcassets in Resources */,
 				7ECE3FC62277342A00B87E22 /* Main.storyboard in Resources */,
+				7ECE3FF9227734C400B87E22 /* batting.json in Resources */,
+				7ECE3FF7227734BE00B87E22 /* teams.json in Resources */,
+				7ECE3FF1227734A800B87E22 /* pitching.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
