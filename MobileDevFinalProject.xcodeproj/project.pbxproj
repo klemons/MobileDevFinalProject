@@ -20,6 +20,7 @@
 		7ECE3FF5227734B600B87E22 /* teamsFranchises.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE3FF4227734B600B87E22 /* teamsFranchises.json */; };
 		7ECE3FF7227734BE00B87E22 /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE3FF6227734BE00B87E22 /* teams.json */; };
 		7ECE3FF9227734C400B87E22 /* batting.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE3FF8227734C400B87E22 /* batting.json */; };
+		7EF81C322279D19F00F97255 /* BaseBallDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF81C312279D19F00F97255 /* BaseBallDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		7ECE3FF4227734B600B87E22 /* teamsFranchises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teamsFranchises.json; sourceTree = "<group>"; };
 		7ECE3FF6227734BE00B87E22 /* teams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
 		7ECE3FF8227734C400B87E22 /* batting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = batting.json; sourceTree = "<group>"; };
+		7EF81C312279D19F00F97255 /* BaseBallDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBallDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				7ECE3FC72277342B00B87E22 /* Assets.xcassets */,
 				7ECE3FC92277342B00B87E22 /* LaunchScreen.storyboard */,
 				7ECE3FCC2277342B00B87E22 /* Info.plist */,
+				7EF81C312279D19F00F97255 /* BaseBallDataController.swift */,
 			);
 			path = MobileDevFinalProject;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				7ECE3FC32277342A00B87E22 /* DetailViewController.swift in Sources */,
 				7ECE3FC12277342A00B87E22 /* MasterViewController.swift in Sources */,
 				7ECE3FBF2277342A00B87E22 /* AppDelegate.swift in Sources */,
+				7EF81C322279D19F00F97255 /* BaseBallDataController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
