@@ -17,7 +17,58 @@ class Franchise: Codeable {
 }
 
 class Team: Codeable {
+    let yearID: Int?
+    let "lgID": "NA",
+    let "teamID": "BS1",
+    let "franchID": "BNA",
+    let "divID": "",
+    let Rank: Int?
+    let G: Int?
+    let Ghome: Int?
+    let W: Int?
+    let L: Int?
+    let DivWin: String?
+    let WCWin: String?
+    let LgWin: String?
+    let WSWin: String?
+    let R: Int?
+    let AB: Int?
+    let H: Int?
+    let 2B: Int?
+    let 3B: Int?
+    let HR: Int?
+    let BB: Int?
+    let SO: Int?
+    let SB: Int?
+    let CS: Int?
+    let HBP: null,
+    let SF: null,
+    let RA: Int?
+    let ER: Int?
+    let ERA: Double
+    let CG: Int?
+    let SHO: Int?
+    let SV: Int?
+    let IPouts: Int?
+    let HA: Int?
+    let HRA: Int?
+    let BBA: Int?
+    let SOA: Int?
+    let E: Int?
+    let DP: Int?
+    let FP: Double
+    let name: String?
+    let park: String?
+    let attendance: Int?
+    let BPF: Int?
+    let PPF: Int?
+    let "teamIDBR": "BOS",
+    let "teamIDlahman45": "BS1",
+    let "teamIDretro": "BS1"
     
+    private enum CodingKeys : String, CodingKey {
+        case secondB = "2B"
+        case thirdB = "3B"
 }
 
 class Player: Codeable {
