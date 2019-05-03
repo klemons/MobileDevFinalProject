@@ -21,7 +21,34 @@ class Team: Codeable {
 }
 
 class Player: Codeable {
+    let playerID: String?
+    let birthYear: Int?
+    let birthMonth: Int?
+    let birthDay: Int?
+    let birthCountry: String?
+    let birthState: String?
+    let birthCity: String?
+    let deathYear: Int?
+    let deathMonth: Int?
+    let deathDay: Int?
+    let deathCountry: String?
+    let deathState: String?
+    let deathCity: String?
+    let nameFirst: String?
+    let nameLast: String?
+    let nameGiven: String?
+    let weight: Int?
+    let height: Int?
+    let bats: String?
+    let throwArm: String?
+    let debut: String?
+    let finalGame: String?
+    let retroID: String?
+    let bbrefID: String?
     
+    private enum CodingKeys : String, CodingKey {
+        case throwArm = "throws"
+    }
 }
 
 class Batting: Codebale {
