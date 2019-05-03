@@ -18,10 +18,10 @@ class Franchise: Codeable {
 
 class Team: Codeable {
     let yearID: Int?
-    let "lgID": "NA",
-    let "teamID": "BS1",
-    let "franchID": "BNA",
-    let "divID": "",
+    let lgID: String?
+    let teamID: String?
+    let franchID: String?
+    let divID: String?
     let Rank: Int?
     let G: Int?
     let Ghome: Int?
@@ -34,15 +34,15 @@ class Team: Codeable {
     let R: Int?
     let AB: Int?
     let H: Int?
-    let 2B: Int?
-    let 3B: Int?
+    let secondB: Int?
+    let thirdB: Int?
     let HR: Int?
     let BB: Int?
     let SO: Int?
     let SB: Int?
     let CS: Int?
-    let HBP: null,
-    let SF: null,
+    let HBP: Int?
+    let SF: Int?
     let RA: Int?
     let ER: Int?
     let ERA: Double
@@ -62,9 +62,9 @@ class Team: Codeable {
     let attendance: Int?
     let BPF: Int?
     let PPF: Int?
-    let "teamIDBR": "BOS",
-    let "teamIDlahman45": "BS1",
-    let "teamIDretro": "BS1"
+    let teamIDBR: String?
+    let teamIDlahman45: String?
+    let teamIDretro: String?
     
     private enum CodingKeys : String, CodingKey {
         case secondB = "2B"
