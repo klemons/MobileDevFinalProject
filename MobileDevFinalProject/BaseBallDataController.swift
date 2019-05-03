@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BaseBallDataController {
+class BaseBallDataController: NSObject {
     let playerPath = Bundle.main.path(forResource: "people", ofType: "json");
     let teamPath = Bundle.main.path(forResource: "teams", ofType: "json");
     let franchisePath = Bundle.main.path(forResource: "teamFranchises", ofType: "json");
@@ -20,4 +20,6 @@ class BaseBallDataController {
     lazy var franchiseData = try? NSData(contentsOfFile: franchisePath!, options: NSData.ReadingOptions.mappedIfSafe);
     lazy var battingData = try? NSData(contentsOfFile: battingPath!, options: NSData.ReadingOptions.mappedIfSafe);
     lazy var pitchingData = try? NSData(contentsOfFile: pitchingPath!, options: NSData.ReadingOptions.mappedIfSafe);
+    
+    
 }
