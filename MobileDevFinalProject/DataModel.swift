@@ -11,10 +11,16 @@ import UIKit
 class DataModel: Codeable {
     var franchise: [Franchise]
     var team: [Team]
+    var player: [Player]
+    var batting: [Batting]
+    var pitching: [Pitching]
 }
 
 class Franchise: Codeable {
-    
+    let franchID: String?
+    let franchName: String?
+    let active: String?
+    let NAassoc: String?
 }
 
 class Team: Codeable {
@@ -131,6 +137,7 @@ class Batting: Codebale {
         case thirdB = "3B"
     }
 }
+    
 class Pitching: Codeable {
     let playerID: String?
     let yearID: Int?
