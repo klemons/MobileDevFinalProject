@@ -25,11 +25,12 @@ class BaseBallDataController: NSObject {
     
     func getData(completion: @escaping (_ myModel: DataModel) ->())
     {
-        loadPlayer(completion: <#T##(DataModel) -> ()#>)
-        loadTeam(completion: <#T##(DataModel) -> ()#>)
-        loadFranchise(completion: <#T##(DataModel) -> ()#>)
-        loadBatting(completion: <#T##(DataModel) -> ()#>)
-        loadPitching(completion: <#T##(DataModel) -> ()#>)
+        let data = myModel
+        loadPlayer(completion: data as! (DataModel) -> ())
+        loadTeam(completion: data as! (DataModel) -> ())
+        loadFranchise(completion: data as! (DataModel) -> ())
+        loadBatting(completion: data as! (DataModel) -> ())
+        loadPitching(completion: data as! (DataModel) -> ())
     }
     
     func loadPlayer(completion: @escaping (_ myModel: DataModel) ->()) {
@@ -61,6 +62,10 @@ class BaseBallDataController: NSObject {
             } catch {
                 print("error:\(error)")
             }
+            
+            DispatchQueue.main.sync {
+                completion(self.myModel as! DataModel)
+            }
         }
     }
     
@@ -76,6 +81,10 @@ class BaseBallDataController: NSObject {
                 
             } catch {
                 print("error:\(error)")
+            }
+            
+            DispatchQueue.main.sync {
+                completion(self.myModel as! DataModel)
             }
         }
     }
@@ -93,6 +102,10 @@ class BaseBallDataController: NSObject {
             } catch {
                 print("error:\(error)")
             }
+            
+            DispatchQueue.main.sync {
+                completion(self.myModel as! DataModel)
+            }
         }
     }
     
@@ -108,6 +121,10 @@ class BaseBallDataController: NSObject {
                 
             } catch {
                 print("error:\(error)")
+            }
+            
+            DispatchQueue.main.sync {
+                completion(self.myModel as! DataModel)
             }
         }
     }

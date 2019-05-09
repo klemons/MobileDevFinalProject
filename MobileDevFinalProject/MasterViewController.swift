@@ -32,6 +32,9 @@ class MasterViewController: UITableViewController {
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
+        dataController.getData(completion: {myModel in
+            self.newDataModel = myModel
+        })
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -61,28 +64,24 @@ class MasterViewController: UITableViewController {
     }
 
     // MARK: - Table View
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return (newDataModel?.franchise.count) ?? 0
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        let mediaName = (newDataModel?.franchise[indexPath.section].franchName)!
+        cell.textLabel!.text = mediaName
+    
         return cell
     }
-
+    
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             objects.remove(at: indexPath.row)
