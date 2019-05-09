@@ -12,6 +12,7 @@
 		7E53AF512284D7D000F6E792 /* pitching.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E53AF502284D7D000F6E792 /* pitching.json */; };
 		7E53AF532284D7D600F6E792 /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E53AF522284D7D600F6E792 /* teams.json */; };
 		7E53AF552284D7DB00F6E792 /* teamsFranchises.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E53AF542284D7DB00F6E792 /* teamsFranchises.json */; };
+		7E53AF572284D8B900F6E792 /* Jsons in Resources */ = {isa = PBXBuildFile; fileRef = 7E53AF562284D8B900F6E792 /* Jsons */; };
 		7EC5C486227C74340001F56D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5C485227C74340001F56D /* DataModel.swift */; };
 		7ECE3FBF2277342A00B87E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE3FBE2277342A00B87E22 /* AppDelegate.swift */; };
 		7ECE3FC12277342A00B87E22 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE3FC02277342A00B87E22 /* MasterViewController.swift */; };
@@ -47,6 +48,7 @@
 		7E53AF502284D7D000F6E792 /* pitching.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pitching.json; sourceTree = "<group>"; };
 		7E53AF522284D7D600F6E792 /* teams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
 		7E53AF542284D7DB00F6E792 /* teamsFranchises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teamsFranchises.json; sourceTree = "<group>"; };
+		7E53AF562284D8B900F6E792 /* Jsons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Jsons; sourceTree = "<group>"; };
 		7EC5C485227C74340001F56D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		7ECE3FBB2277342A00B87E22 /* MobileDevFinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileDevFinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECE3FBE2277342A00B87E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				7E53AF4B2284D77100F6E792 /* Jsons */,
+				7E53AF562284D8B900F6E792 /* Jsons */,
 				7ECE3FBE2277342A00B87E22 /* AppDelegate.swift */,
 				7ECE3FC02277342A00B87E22 /* MasterViewController.swift */,
 				7ECE3FC22277342A00B87E22 /* DetailViewController.swift */,
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E53AF572284D8B900F6E792 /* Jsons in Resources */,
 				7ECE3FCB2277342B00B87E22 /* LaunchScreen.storyboard in Resources */,
 				7E53AF512284D7D000F6E792 /* pitching.json in Resources */,
 				7E53AF4F2284D7C800F6E792 /* people.json in Resources */,

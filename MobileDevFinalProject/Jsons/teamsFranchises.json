@@ -1,0 +1,722 @@
+[
+ {
+   "franchID": "ALT",
+   "franchName": "Altoona Mountain City",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "ANA",
+   "franchName": "Los Angeles Angels of Anaheim",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "ARI",
+   "franchName": "Arizona Diamondbacks",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "ATH",
+   "franchName": "Philadelphia Athletics",
+   "active": "N",
+   "NAassoc": "PNA"
+ },
+ {
+   "franchID": "ATL",
+   "franchName": "Atlanta Braves",
+   "active": "Y",
+   "NAassoc": "BNA"
+ },
+ {
+   "franchID": "BAL",
+   "franchName": "Baltimore Orioles",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BFB",
+   "franchName": "Buffalo Bisons",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BFL",
+   "franchName": "Buffalo Bisons",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BLC",
+   "franchName": "Baltimore Canaries",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BLO",
+   "franchName": "Baltimore Orioles",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BLT",
+   "franchName": "Baltimore Terrapins",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BLU",
+   "franchName": "Baltimore Monumentals",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BNA",
+   "franchName": "Boston Red Stockings",
+   "active": "NA",
+   "NAassoc": "ATL"
+ },
+ {
+   "franchID": "BOS",
+   "franchName": "Boston Red Sox",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BRA",
+   "franchName": "Brooklyn Atlantics",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BRD",
+   "franchName": "Boston Reds",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BRG",
+   "franchName": "Brooklyn Gladiators",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BRS",
+   "franchName": "Boston Reds",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BTT",
+   "franchName": "Brooklyn Tip-Tops",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BUF",
+   "franchName": "Buffalo Bisons",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "BWW",
+   "franchName": "Brooklyn Ward's Wonders",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CBK",
+   "franchName": "Columbus Buckeyes",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CBL",
+   "franchName": "Cleveland Blues",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CEN",
+   "franchName": "Philadelphia Centennials",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CFC",
+   "franchName": "Cleveland Forest Citys",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CHC",
+   "franchName": "Chicago Cubs",
+   "active": "Y",
+   "NAassoc": "CNA"
+ },
+ {
+   "franchID": "CHH",
+   "franchName": "Chicago Whales",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CHP",
+   "franchName": "Chicago Pirates",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CHW",
+   "franchName": "Chicago White Sox",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CIN",
+   "franchName": "Cincinnati Reds",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CKK",
+   "franchName": "Cincinnati Kelly's Killers",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CLE",
+   "franchName": "Cleveland Indians",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CLI",
+   "franchName": "Cleveland Infants",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CLS",
+   "franchName": "Columbus Solons",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CLV",
+   "franchName": "Cleveland Spiders",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CNA",
+   "franchName": "Chicago White Stockings",
+   "active": "NA",
+   "NAassoc": "CHC"
+ },
+ {
+   "franchID": "CNR",
+   "franchName": "Cincinnati Reds",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "COL",
+   "franchName": "Colorado Rockies",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "COR",
+   "franchName": "Cincinnati Outlaw Reds",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "CPI",
+   "franchName": "Chicago/Pittsburgh (Union League)",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "DET",
+   "franchName": "Detroit Tigers",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "DTN",
+   "franchName": "Detroit Wolverines",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "ECK",
+   "franchName": "Brooklyn Eckfords",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "FLA",
+   "franchName": "Florida Marlins",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "HAR",
+   "franchName": "Hartford Dark Blues",
+   "active": "N",
+   "NAassoc": "HNA"
+ },
+ {
+   "franchID": "HNA",
+   "franchName": "Hartford Dark Blues",
+   "active": "NA",
+   "NAassoc": "HAR"
+ },
+ {
+   "franchID": "HOU",
+   "franchName": "Houston Astros",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "IBL",
+   "franchName": "Indianapolis Blues",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "IHO",
+   "franchName": "Indianapolis Hoosiers",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "IND",
+   "franchName": "Indianapolis Hoosiers",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "KCC",
+   "franchName": "Kansas City Cowboys",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "KCN",
+   "franchName": "Kansas City Cowboys",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "KCP",
+   "franchName": "Kansas City Packers",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "KCR",
+   "franchName": "Kansas City Royals",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "KCU",
+   "franchName": "Kansas City Cowboys",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "KEK",
+   "franchName": "Fort Wayne Kekiongas",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "LAD",
+   "franchName": "Los Angeles Dodgers",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "LGR",
+   "franchName": "Louisville Grays",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "LOU",
+   "franchName": "Louisville Colonels",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "MAN",
+   "franchName": "Middletown Mansfields",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "MAR",
+   "franchName": "Baltimore Marylands",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "MIL",
+   "franchName": "Milwaukee Brewers",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "MIN",
+   "franchName": "Minnesota Twins",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "MLA",
+   "franchName": "Milwaukee Brewers",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "MLG",
+   "franchName": "Milwaukee Grays",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "MLU",
+   "franchName": "Milwaukee Brewers",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "NAT",
+   "franchName": "Washington Nationals",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "NEW",
+   "franchName": "Newark Pepper",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "NHV",
+   "franchName": "New Haven Elm Citys",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "NNA",
+   "franchName": "New York Mutuals",
+   "active": "NA",
+   "NAassoc": "NYU"
+ },
+ {
+   "franchID": "NYI",
+   "franchName": "New York Giants",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "NYM",
+   "franchName": "New York Mets",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "NYP",
+   "franchName": "New York Metropolitans",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "NYU",
+   "franchName": "New York Mutuals",
+   "active": "N",
+   "NAassoc": "NNA"
+ },
+ {
+   "franchID": "NYY",
+   "franchName": "New York Yankees",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "OAK",
+   "franchName": "Oakland Athletics",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "OLY",
+   "franchName": "Washington Olympics",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "PBB",
+   "franchName": "Pittsburgh Burghers",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "PBS",
+   "franchName": "Pittsburgh Rebels",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "PHA",
+   "franchName": "Philadelphia Athletics",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "PHI",
+   "franchName": "Philadelphia Phillies",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "PHK",
+   "franchName": "Philadelphia Keystones",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "PHQ",
+   "franchName": "Philadelphia Athletics",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "PIT",
+   "franchName": "Pittsburgh Pirates",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "PNA",
+   "franchName": "Philadelphia Athletics",
+   "active": "NA",
+   "NAassoc": "ATH"
+ },
+ {
+   "franchID": "PRO",
+   "franchName": "Providence Grays",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "PWS",
+   "franchName": "Philadelphia White Stockings",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "RES",
+   "franchName": "Elizabeth Resolutes",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "RIC",
+   "franchName": "Richmond Virginians",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "ROC",
+   "franchName": "Rochester Broncos",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "ROK",
+   "franchName": "Rockford Forest Citys",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "SBS",
+   "franchName": "St. Louis Brown Stockings",
+   "active": "N",
+   "NAassoc": "SNA"
+ },
+ {
+   "franchID": "SDP",
+   "franchName": "San Diego Padres",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "SEA",
+   "franchName": "Seattle Mariners",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "SFG",
+   "franchName": "San Francisco Giants",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "SLI",
+   "franchName": "St. Louis Terriers",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "SLM",
+   "franchName": "St. Louis Maroons",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "SLR",
+   "franchName": "St. Louis Red Stockings",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "SNA",
+   "franchName": "St. Louis Brown Stockings",
+   "active": "NA",
+   "NAassoc": "SBS"
+ },
+ {
+   "franchID": "STL",
+   "franchName": "St. Louis Cardinals",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "STP",
+   "franchName": "St. Paul Apostles",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "SYR",
+   "franchName": "Syracuse Stars",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "SYS",
+   "franchName": "Syracuse Stars",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "TBD",
+   "franchName": "Tampa Bay Rays",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "TEX",
+   "franchName": "Texas Rangers",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "TLM",
+   "franchName": "Toledo Maumees",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "TOL",
+   "franchName": "Toledo Blue Stockings",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "TOR",
+   "franchName": "Toronto Blue Jays",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "TRO",
+   "franchName": "Troy Haymakers",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "TRT",
+   "franchName": "Troy Trojans",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WAS",
+   "franchName": "Washington Senators",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WBL",
+   "franchName": "Washington Blue Legs",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WES",
+   "franchName": "Keokuk Westerns",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WIL",
+   "franchName": "Wilmington Quicksteps",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WNA",
+   "franchName": "Washington Nationals",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WNL",
+   "franchName": "Washington Nationals",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WNT",
+   "franchName": "Washington Nationals",
+   "active": "NA",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WOR",
+   "franchName": "Worcester Ruby Legs",
+   "active": "N",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WSN",
+   "franchName": "Washington Nationals",
+   "active": "Y",
+   "NAassoc": ""
+ },
+ {
+   "franchID": "WST",
+   "franchName": "Washington Statesmen",
+   "active": "N",
+   "NAassoc": ""
+ }
+]
