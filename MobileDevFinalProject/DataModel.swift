@@ -24,54 +24,54 @@ class Franchise: Codable {
 }
 
 class Team: Codable {
-    let yearID: Int?
-    let lgID: String?
-    let teamID: String?
-    let franchID: String?
-    let divID: String?
-    let Rank: Int?
-    let G: Int?
-    let Ghome: Int?
-    let W: Int?
-    let L: Int?
-    let DivWin: String?
-    let WCWin: String?
-    let LgWin: String?
-    let WSWin: String?
-    let R: Int?
-    let AB: Int?
-    let H: Int?
+    let yearID: Int? = nil
+    let lgID: String? = nil
+    let teamID: String? = nil
+    let franchID: String? = nil
+    let divID: String? = nil
+    let Rank: Int? = nil
+    let G: Int? = nil
+    let Ghome: Int? = nil
+    let W: Int? = nil
+    let L: Int? = nil
+    let DivWin: String? = nil
+    let WCWin: String? = nil
+    let LgWin: String? = nil
+    let WSWin: String? = nil
+    let R: Int? = nil
+    let AB: Int? = nil
+    let H: Int? = nil
     let secondB: Int?
     let thirdB: Int?
-    let HR: Int?
-    let BB: Int?
-    let SO: Int?
-    let SB: Int?
-    let CS: Int?
-    let HBP: Int?
-    let SF: Int?
-    let RA: Int?
-    let ER: Int?
-    let ERA: Double
-    let CG: Int?
-    let SHO: Int?
-    let SV: Int?
-    let IPouts: Int?
-    let HA: Int?
-    let HRA: Int?
-    let BBA: Int?
-    let SOA: Int?
-    let E: Int?
-    let DP: Int?
-    let FP: Double
-    let name: String?
-    let park: String?
-    let attendance: Int?
-    let BPF: Int?
-    let PPF: Int?
-    let teamIDBR: String?
-    let teamIDlahman45: String?
-    let teamIDretro: String?
+    let HR: Int? = nil
+    let BB: Int? = nil
+    let SO: Int? = nil
+    let SB: Int? = nil
+    let CS: Int? = nil
+    let HBP: Int? = nil
+    let SF: Int? = nil
+    let RA: Int? = nil
+    let ER: Int? = nil
+    let ERA: Double? = nil
+    let CG: Int? = nil
+    let SHO: Int? = nil
+    let SV: Int? = nil
+    let IPouts: Int? = nil
+    let HA: Int? = nil
+    let HRA: Int? = nil
+    let BBA: Int? = nil
+    let SOA: Int? = nil
+    let E: Int? = nil
+    let DP: Int? = nil
+    let FP: Double? = nil
+    let name: String? = nil
+    let park: String? = nil
+    let attendance: Int? = nil
+    let BPF: Int? = nil
+    let PPF: Int? = nil
+    let teamIDBR: String? = nil
+    let teamIDlahman45: String? = nil
+    let teamIDretro: String? = nil
     
     private enum CodingKeys : String, CodingKey {
         case secondB = "2B"
@@ -80,30 +80,30 @@ class Team: Codable {
 }
 
 class Player: Codable {
-    let playerID: String?
-    let birthYear: Int?
-    let birthMonth: Int?
-    let birthDay: Int?
-    let birthCountry: String?
-    let birthState: String?
-    let birthCity: String?
-    let deathYear: Int?
-    let deathMonth: Int?
-    let deathDay: Int?
-    let deathCountry: String?
-    let deathState: String?
-    let deathCity: String?
-    let nameFirst: String?
-    let nameLast: String?
-    let nameGiven: String?
-    let weight: Int?
-    let height: Int?
-    let bats: String?
+    let playerID: String? = nil
+    let birthYear: Int? = nil
+    let birthMonth: Int? = nil
+    let birthDay: Int? = nil
+    let birthCountry: String? = nil
+    let birthState: String? = nil
+    let birthCity: String? = nil
+    let deathYear: Int? = nil
+    let deathMonth: Int? = nil
+    let deathDay: Int? = nil
+    let deathCountry: String? = nil
+    let deathState: String? = nil
+    let deathCity: String? = nil
+    let nameFirst: String? = nil
+    let nameLast: String? = nil
+    let nameGiven: String? = nil
+    let weight: Int? = nil
+    let height: Int? = nil
+    let bats: String? = nil
     let throwArm: String?
-    let debut: String?
-    let finalGame: String?
-    let retroID: String?
-    let bbrefID: String?
+    let debut: String? = nil
+    let finalGame: String? = nil
+    let retroID: String? = nil
+    let bbrefID: String? = nil
     
     private enum CodingKeys : String, CodingKey {
         case throwArm = "throws"
@@ -111,27 +111,27 @@ class Player: Codable {
 }
 
 class Batting: Codable {
-    let playerID: String?
-    let yearID: Int?
-    let teamID: String?
-    let lgID: String?
-    let G: Int?
-    let AB: Int?
-    let R: Int?
-    let H: Int?
+    let playerID: String? = nil
+    let yearID: Int? = nil
+    let teamID: String? = nil
+    let lgID: String? = nil
+    let G: Int? = nil
+    let AB: Int? = nil
+    let R: Int? = nil
+    let H: Int? = nil
     let secondB: Int?
     let thirdB: Int?
-    let HR: Int?
-    let RBI: Int?
-    let SB: Int?
-    let CS: Int?
-    let BB: Int?
-    let SO: Int?
-    let IBB: Int?
-    let HBP: Int?
-    let SH: Int?
-    let SF: Int?
-    let GIDP: Int?
+    let HR: Int? = nil
+    let RBI: Int? = nil
+    let SB: Int? = nil
+    let CS: Int? = nil
+    let BB: Int? = nil
+    let SO: Int? = nil
+    let IBB: Int? = nil
+    let HBP: Int? = nil
+    let SH: Int? = nil
+    let SF: Int? = nil
+    let GIDP: Int? = nil
     
     private enum CodingKeys : String, CodingKey {
         case secondB = "2B"
