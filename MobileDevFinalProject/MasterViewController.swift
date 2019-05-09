@@ -11,7 +11,13 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
+    let dataController = BaseBallDataController()
     var objects = [Any]()
+    var newDataModel: DataModel? {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
 
     override func viewDidLoad() {

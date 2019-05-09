@@ -10,6 +10,7 @@ import UIKit
 
 class DataModel: Codeable {
     var franchise: [Franchise]
+    var team: [Team]
 }
 
 class Franchise: Codeable {
