@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DataModel: Codeable {
+class DataModel: Codable {
     var franchise: [Franchise]
     var team: [Team]
     var player: [Player]
@@ -16,14 +16,14 @@ class DataModel: Codeable {
     var pitching: [Pitching]
 }
 
-class Franchise: Codeable {
+class Franchise: Codable {
     let franchID: String?
     let franchName: String?
     let active: String?
     let NAassoc: String?
 }
 
-class Team: Codeable {
+class Team: Codable {
     let yearID: Int?
     let lgID: String?
     let teamID: String?
@@ -77,8 +77,9 @@ class Team: Codeable {
         case secondB = "2B"
         case thirdB = "3B"
 }
+}
 
-class Player: Codeable {
+class Player: Codable {
     let playerID: String?
     let birthYear: Int?
     let birthMonth: Int?
@@ -109,7 +110,7 @@ class Player: Codeable {
     }
 }
 
-class Batting: Codebale {
+class Batting: Codable {
     let playerID: String?
     let yearID: Int?
     let teamID: String?
@@ -138,7 +139,7 @@ class Batting: Codebale {
     }
 }
     
-class Pitching: Codeable {
+class Pitching: Codable {
     let playerID: String?
     let yearID: Int?
     let stint: Int?
