@@ -83,7 +83,7 @@ class MasterViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let mediaName = (newDataModel?.franchise[indexPath.section].franchName)!
+        let mediaName = (newDataModel?.franchise[indexPath.row].franchName)!
         cell.textLabel!.text = mediaName
     
         return cell

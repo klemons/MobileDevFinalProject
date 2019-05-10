@@ -15,6 +15,8 @@ class BaseBallDataController: NSObject {
     let battingPath = Bundle.main.path(forResource: "batting", ofType: "json");
     let pitchingPath = Bundle.main.path(forResource: "pitching", ofType: "json");
     
+    let playerURL = "https://api.myjson.com/bins/kerj2"
+    
     lazy var playerData = try? NSData(contentsOfFile: playerPath!, options: NSData.ReadingOptions.mappedIfSafe);
     lazy var teamData = try? NSData(contentsOfFile: teamPath!, options: NSData.ReadingOptions.mappedIfSafe);
     lazy var franchiseData = try? NSData(contentsOfFile: franchisePath!, options: NSData.ReadingOptions.mappedIfSafe);
@@ -53,7 +55,7 @@ class BaseBallDataController: NSObject {
                 print("error:\(error)")
             }
             
-
+            
         }
     }
     
@@ -108,4 +110,5 @@ class BaseBallDataController: NSObject {
 
         }
     }
+    
 }
