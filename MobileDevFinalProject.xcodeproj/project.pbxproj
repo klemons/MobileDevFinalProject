@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E2C4EA822853E8700928AB6 /* mlb-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E2C4EA722853E8600928AB6 /* mlb-logo.jpg */; };
 		7E53AF4D2284D7C000F6E792 /* batting.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E53AF4C2284D7C000F6E792 /* batting.json */; };
 		7E53AF4F2284D7C800F6E792 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E53AF4E2284D7C800F6E792 /* people.json */; };
 		7E53AF512284D7D000F6E792 /* pitching.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E53AF502284D7D000F6E792 /* pitching.json */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E2C4EA722853E8600928AB6 /* mlb-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mlb-logo.jpg"; sourceTree = "<group>"; };
 		7E53AF4C2284D7C000F6E792 /* batting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = batting.json; sourceTree = "<group>"; };
 		7E53AF4E2284D7C800F6E792 /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
 		7E53AF502284D7D000F6E792 /* pitching.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pitching.json; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				7ECE3FC22277342A00B87E22 /* DetailViewController.swift */,
 				7ECE3FC42277342A00B87E22 /* Main.storyboard */,
 				7ECE3FC72277342B00B87E22 /* Assets.xcassets */,
+				7E2C4EA722853E8600928AB6 /* mlb-logo.jpg */,
 				7ECE3FC92277342B00B87E22 /* LaunchScreen.storyboard */,
 				7ECE3FCC2277342B00B87E22 /* Info.plist */,
 				7EF81C312279D19F00F97255 /* BaseBallDataController.swift */,
@@ -266,6 +269,7 @@
 			files = (
 				7E53AF572284D8B900F6E792 /* Jsons in Resources */,
 				7ECE3FCB2277342B00B87E22 /* LaunchScreen.storyboard in Resources */,
+				7E2C4EA822853E8700928AB6 /* mlb-logo.jpg in Resources */,
 				7E53AF512284D7D000F6E792 /* pitching.json in Resources */,
 				7E53AF4F2284D7C800F6E792 /* people.json in Resources */,
 				7E53AF4D2284D7C000F6E792 /* batting.json in Resources */,

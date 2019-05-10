@@ -10,6 +10,7 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     var filteredPlayers = [Player]()
     var players = [Player]()
     var detailViewController: DetailViewController? = nil
@@ -116,6 +117,20 @@ class MasterViewController: UITableViewController {
             return (player.nameLast)!.lowercased().contains(searchText.lowercased())
         })
         
+        tableView.reloadData()
+    }
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        let searchString = searchController.searchBar.text
+        
+        // Filter the data array and get only those countries that match the search text.
+        filteredPlayers = players.filter({ (player) -> Bool in
+            let countryText: NSString = player.nameLast! as NSString
+            
+            return (player.nameLast!.contains(countryText))
+        })
+        
+        // Reload the tableview.
         tableView.reloadData()
     }
 
