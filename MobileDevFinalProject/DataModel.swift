@@ -9,11 +9,11 @@
 import UIKit
 
 class DataModel: Codable {
-    var franchise: [Franchise]
-    var team: [Team]
+    //var franchises: [Franchise]
+    //var teams: [Team]
     var player: [Player]
-    var batting: [Batting]
-    var pitching: [Pitching]
+    //var batting: [Batting]
+    //var pitching: [Pitching]
 }
 
 class Franchise: Codable {
@@ -80,33 +80,56 @@ class Team: Codable {
 }
 
 class Player: Codable {
-    let playerID: String? = nil
-    let birthYear: Int? = nil
-    let birthMonth: Int? = nil
-    let birthDay: Int? = nil
-    let birthCountry: String? = nil
-    let birthState: String? = nil
-    let birthCity: String? = nil
-    let deathYear: Int? = nil
-    let deathMonth: Int? = nil
-    let deathDay: Int? = nil
-    let deathCountry: String? = nil
-    let deathState: String? = nil
-    let deathCity: String? = nil
-    let nameFirst: String? = nil
-    let nameLast: String? = nil
-    let nameGiven: String? = nil
-    let weight: Int? = nil
-    let height: Int? = nil
-    let bats: String? = nil
+    let playerID: String?
+    let birthYear: Int?
+    let birthMonth: Int?
+    let birthDay: Int?
+    let birthCountry: String?
+    let birthState: String?
+    let birthCity: String?
+    let deathYear: Int?
+    let deathMonth: Int?
+    let deathDay: Int?
+    let deathCountry: String?
+    let deathState: String?
+    let deathCity: String?
+    let nameFirst: String?
+    let nameLast: String?
+    let nameGiven: String?
+    let weight: Int?
+    let height: Int?
+    let bats: String?
     let throwArm: String?
-    let debut: String? = nil
-    let finalGame: String? = nil
-    let retroID: String? = nil
-    let bbrefID: String? = nil
+    let debut: String?
+    let finalGame: String?
+    let retroID: String?
+    let bbrefID: String?
     
     private enum CodingKeys : String, CodingKey {
         case throwArm = "throws"
+        case playerID
+        case birthYear
+        case birthMonth
+        case birthDay
+        case birthCountry
+        case birthState
+        case birthCity
+        case deathYear
+        case deathMonth
+        case deathDay
+        case deathCountry
+        case deathState
+        case deathCity
+        case nameFirst
+        case nameLast
+        case nameGiven
+        case weight
+        case height
+        case bats
+        case debut
+        case finalGame
+        case retroID
+        case bbrefID
     }
 }
 

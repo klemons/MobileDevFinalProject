@@ -1,4 +1,4 @@
-[
+{ "franchises": [
  {
    "franchID": "ALT",
    "franchName": "Altoona Mountain City",
@@ -720,3 +720,4 @@
    "NAassoc": ""
  }
 ]
+}

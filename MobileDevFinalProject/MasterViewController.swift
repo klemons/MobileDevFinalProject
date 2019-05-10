@@ -35,18 +35,7 @@ class MasterViewController: UITableViewController {
         dataController.loadPlayer(completion: {myModel in
             self.newDataModel = myModel
         })
-        dataController.loadTeam(completion: {myModel in
-            self.newDataModel = myModel
-        })
-        dataController.loadBatting(completion: {myModel in
-            self.newDataModel = myModel
-        })
-        dataController.loadPitching(completion: {myModel in
-            self.newDataModel = myModel
-        })
-        dataController.loadFranchise(completion: {myModel in
-            self.newDataModel = myModel
-        })
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -78,14 +67,14 @@ class MasterViewController: UITableViewController {
     // MARK: - Table View
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return (newDataModel?.franchise.count) ?? 0
+       return (newDataModel?.player.count) ?? 0
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let mediaName = (newDataModel?.franchise[indexPath.row].franchName)!
+        let mediaName = (newDataModel?.player[indexPath.row].nameLast)!
         cell.textLabel!.text = mediaName
-    
+
         return cell
     }
     

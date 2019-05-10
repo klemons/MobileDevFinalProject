@@ -1,4 +1,4 @@
-[
+{ "teams": [
  {
    "yearID": 1871,
    "lgID": "NA",
@@ -144750,3 +144750,4 @@
    "teamIDretro": "WAS"
  }
 ]
+}

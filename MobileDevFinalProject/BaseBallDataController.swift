@@ -26,20 +26,22 @@ class BaseBallDataController: NSObject {
     var myModel: Any?
     
     func loadPlayer(completion: @escaping (_ myModel: DataModel) ->()) {
-        if let url = Bundle.main.url(forResource: "people", withExtension: "json") {
+        if let url = Bundle.main.path(forResource: "people", ofType: "json") {
             do {
-                let data = try Data(contentsOf: url)
+                let data = try Data(contentsOf: URL(fileURLWithPath: url))
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode([Player].self, from: data)
+                let jsonData = try decoder.decode(DataModel.self, from: data)
                 
                 self.myModel = jsonData
                 
-                for player in jsonData {
-                    print(player.nameFirst ?? "none")
-                }
+                
                 
             } catch {
                 print("error:\(error)")
+            }
+            
+            DispatchQueue.main.async {
+                completion(self.myModel as! DataModel)
             }
         }
     }
@@ -49,7 +51,7 @@ class BaseBallDataController: NSObject {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode([Team].self, from: data)
+                let jsonData = try decoder.decode(DataModel.self, from: data)
                 
                 self.myModel = jsonData
                 
@@ -67,7 +69,7 @@ class BaseBallDataController: NSObject {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode([Franchise].self, from: data)
+                let jsonData = try decoder.decode(DataModel.self, from: data)
                 
                 self.myModel = jsonData
                 
@@ -76,7 +78,9 @@ class BaseBallDataController: NSObject {
                 print("error:\(error)")
             }
             
- 
+            DispatchQueue.main.async {
+                completion(self.myModel as! DataModel)
+            }
         }
     }
     
