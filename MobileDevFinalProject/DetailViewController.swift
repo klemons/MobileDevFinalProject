@@ -32,15 +32,15 @@ class DetailViewController: UIViewController {
             }
             
             if let labelYear = yearOfBirthLabel {
-                labelYear.text = "\(detail.birthYear)"
+                labelYear.text = "\(detail.birthYear!)"
             }
             
             if let labelWeight = weightLabel {
-                labelWeight.text = "\(detail.weight)"
+                labelWeight.text = "\(detail.weight!)" + " lbs"
             }
             
             if let labelHeight = heightLabel {
-                labelHeight.text = "\(detail.height)"
+                labelHeight.text = "\(detail.height!)" + " in"
             }
             
             if let labelBat = batDirectionLabel {
