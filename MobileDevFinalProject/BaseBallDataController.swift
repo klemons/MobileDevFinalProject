@@ -23,22 +23,12 @@ class BaseBallDataController: NSObject {
     
     var myModel: Any?
     
-    func getData(completion: @escaping (_ myModel: DataModel) ->())
-    {
-        let data = myModel
-        loadPlayer(completion: data as! (DataModel) -> ())
-        loadTeam(completion: data as! (DataModel) -> ())
-        loadFranchise(completion: data as! (DataModel) -> ())
-        loadBatting(completion: data as! (DataModel) -> ())
-        loadPitching(completion: data as! (DataModel) -> ())
-    }
-    
     func loadPlayer(completion: @escaping (_ myModel: DataModel) ->()) {
         if let url = Bundle.main.url(forResource: "people", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(DataModel.self, from: data)
+                let jsonData = try decoder.decode([Player].self, from: data)
                 
                 self.myModel = jsonData
                 
@@ -54,7 +44,7 @@ class BaseBallDataController: NSObject {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(DataModel.self, from: data)
+                let jsonData = try decoder.decode([Team].self, from: data)
                 
                 self.myModel = jsonData
                 
@@ -63,9 +53,7 @@ class BaseBallDataController: NSObject {
                 print("error:\(error)")
             }
             
-            DispatchQueue.main.sync {
-                completion(self.myModel as! DataModel)
-            }
+
         }
     }
     
@@ -74,7 +62,7 @@ class BaseBallDataController: NSObject {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(DataModel.self, from: data)
+                let jsonData = try decoder.decode([Franchise].self, from: data)
                 
                 self.myModel = jsonData
                 
@@ -83,9 +71,7 @@ class BaseBallDataController: NSObject {
                 print("error:\(error)")
             }
             
-            DispatchQueue.main.sync {
-                completion(self.myModel as! DataModel)
-            }
+ 
         }
     }
     
@@ -94,7 +80,7 @@ class BaseBallDataController: NSObject {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(DataModel.self, from: data)
+                let jsonData = try decoder.decode([Batting].self, from: data)
                 
                 self.myModel = jsonData
                 
@@ -102,10 +88,7 @@ class BaseBallDataController: NSObject {
             } catch {
                 print("error:\(error)")
             }
-            
-            DispatchQueue.main.sync {
-                completion(self.myModel as! DataModel)
-            }
+
         }
     }
     
@@ -114,7 +97,7 @@ class BaseBallDataController: NSObject {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(DataModel.self, from: data)
+                let jsonData = try decoder.decode([Pitching].self, from: data)
                 
                 self.myModel = jsonData
                 
@@ -122,10 +105,7 @@ class BaseBallDataController: NSObject {
             } catch {
                 print("error:\(error)")
             }
-            
-            DispatchQueue.main.sync {
-                completion(self.myModel as! DataModel)
-            }
+
         }
     }
 }

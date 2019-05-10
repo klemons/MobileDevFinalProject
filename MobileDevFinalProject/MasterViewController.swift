@@ -32,7 +32,19 @@ class MasterViewController: UITableViewController {
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
-        dataController.getData(completion: {myModel in
+        dataController.loadPlayer(completion: {myModel in
+            self.newDataModel = myModel
+        })
+        dataController.loadTeam(completion: {myModel in
+            self.newDataModel = myModel
+        })
+        dataController.loadBatting(completion: {myModel in
+            self.newDataModel = myModel
+        })
+        dataController.loadPitching(completion: {myModel in
+            self.newDataModel = myModel
+        })
+        dataController.loadFranchise(completion: {myModel in
             self.newDataModel = myModel
         })
     }
@@ -66,7 +78,7 @@ class MasterViewController: UITableViewController {
     // MARK: - Table View
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (newDataModel?.franchise.count) ?? 0
+       return (newDataModel?.franchise.count) ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
