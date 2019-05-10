@@ -11,6 +11,7 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
+    var i : Int = 0
     var filteredPlayers = [Player]()
     var players = [Player]()
     var detailViewController: DetailViewController? = nil
@@ -48,6 +49,7 @@ class MasterViewController: UITableViewController {
         dataController.loadPlayer(completion: {myModel in
             self.newDataModel = myModel
         })
+       
 
     }
 
