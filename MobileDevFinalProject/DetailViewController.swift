@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var batDirectionLabel: UILabel!
     @IBOutlet weak var throwDirectionLabel: UILabel!
+    @IBOutlet weak var mlbLogo: UIImageView!
     
     func configureView() {
         // Update the user interface for the detail item.
@@ -32,7 +33,7 @@ class DetailViewController: UIViewController {
             }
             
             if let labelYear = yearOfBirthLabel {
-                labelYear.text = "\(detail.birthYear!)"
+                labelYear.text = "Born: " + "\(detail.birthYear!)"
             }
             
             if let labelWeight = weightLabel {
@@ -44,11 +45,15 @@ class DetailViewController: UIViewController {
             }
             
             if let labelBat = batDirectionLabel {
-                labelBat.text = detail.bats
+                labelBat.text = "Bats: " + detail.bats!
             }
             
             if let labelThrow = throwDirectionLabel {
-                labelThrow.text = detail.throwArm
+                labelThrow.text = "Throws: " + detail.throwArm!
+            }
+            
+            if let ImageLogo = mlbLogo {
+                ImageLogo.image = UIImage(named: "mlb-logo")
             }
         }
     }

@@ -119,20 +119,6 @@ class MasterViewController: UITableViewController {
         
         tableView.reloadData()
     }
-    
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
-        let searchString = searchController.searchBar.text
-        
-        // Filter the data array and get only those countries that match the search text.
-        filteredPlayers = players.filter({ (player) -> Bool in
-            let countryText: NSString = player.nameLast! as NSString
-            
-            return (player.nameLast!.contains(countryText))
-        })
-        
-        // Reload the tableview.
-        tableView.reloadData()
-    }
 
 
 }
