@@ -19,6 +19,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var batDirectionLabel: UILabel!
     @IBOutlet weak var throwDirectionLabel: UILabel!
     @IBOutlet weak var mlbLogo: UIImageView!
+    @IBOutlet weak var mlbAd: UIImageView!
+    @IBOutlet weak var adLabel: UILabel!
+    @IBOutlet weak var adButton: UIButton!
+    @IBAction func touchAd(_ sender: Any) {
+        UIApplication.shared.openURL(NSURL(string: "https://www.mlb.com/live-stream-games/subscribe")! as URL)
+    }
     
     func configureView() {
         // Update the user interface for the detail item.
@@ -37,11 +43,11 @@ class DetailViewController: UIViewController {
             }
             
             if let labelWeight = weightLabel {
-                labelWeight.text = "\(detail.weight!)" + " lbs"
+                labelWeight.text = "Weight: " + "\(detail.weight!)" + " lbs"
             }
             
             if let labelHeight = heightLabel {
-                labelHeight.text = "\(detail.height!)" + " in"
+                labelHeight.text = "Height: " + "\(detail.height!)" + " in"
             }
             
             if let labelBat = batDirectionLabel {
@@ -54,6 +60,14 @@ class DetailViewController: UIViewController {
             
             if let ImageLogo = mlbLogo {
                 ImageLogo.image = UIImage(named: "mlb-logo")
+            }
+            
+            if let AdLogo = mlbAd {
+                AdLogo.image = UIImage(named: "mlbtv")
+            }
+            
+            if let adText = adLabel {
+                adText.text = "App Power by"
             }
         }
     }
@@ -70,7 +84,7 @@ class DetailViewController: UIViewController {
             configureView()
         }
     }
-
-
+    
+    
 }
 
