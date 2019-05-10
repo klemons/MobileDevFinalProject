@@ -34,6 +34,9 @@ class BaseBallDataController: NSObject {
                 
                 self.myModel = jsonData
                 
+                for player in jsonData {
+                    print(player.nameFirst ?? "none")
+                }
                 
             } catch {
                 print("error:\(error)")
