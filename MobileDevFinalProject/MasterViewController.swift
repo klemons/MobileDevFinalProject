@@ -10,6 +10,8 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
+    var filteredPlayers = [Player]()
+    var players = [Player]()
     var detailViewController: DetailViewController? = nil
     let dataController = BaseBallDataController()
     var objects = [Any]()
@@ -18,10 +20,20 @@ class MasterViewController: UITableViewController {
             tableView.reloadData()
         }
     }
+    
+    //Search Controller
+    let searchController = UISearchController(searchResultsController: nil)
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Setup the Search Controller
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Players"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
 
@@ -55,7 +67,7 @@ class MasterViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
+                let object = newDataModel!.player[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
@@ -72,7 +84,7 @@ class MasterViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let mediaName = (newDataModel?.player[indexPath.row].nameLast)!
+        let mediaName = ((newDataModel?.player[indexPath.row].nameLast)! + " , " + (newDataModel?.player[indexPath.row].nameFirst)!)
         cell.textLabel!.text = mediaName
 
         return cell
@@ -91,7 +103,28 @@ class MasterViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
+    
+    // MARK: - Private instance methods
+    
+    func searchBarIsEmpty() -> Bool {
+        // Returns true if the text is empty or nil
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filteredPlayers = players.filter({( player : Player) -> Bool in
+            return (player.nameLast)!.lowercased().contains(searchText.lowercased())
+        })
+        
+        tableView.reloadData()
+    }
 
 
 }
 
+extension MasterViewController: UISearchResultsUpdating {
+    // MARK: - UISearchResultsUpdating Delegate
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
+}
